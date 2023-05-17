@@ -85,8 +85,6 @@ async function run() {
       }
 
       const cursor = appointmentsCollection.find(query);
-      // const token = req.headers.authorization;
-      //  console.log(token);
       const result = await cursor.toArray();
       res.send(result);
     });
